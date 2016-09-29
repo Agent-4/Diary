@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        NSThread.sleepForTimeInterval(2.0) //延长2秒
+        //NSThread.sleepForTimeInterval(2.0) //延长2秒
         // Override point for customization after application launch.
         return true
     }
