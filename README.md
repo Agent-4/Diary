@@ -5,7 +5,7 @@
 
 **图标**
 
-<img src="https://coding.net/u/four4/p/Diary/git/raw/master/Diary/Assets.xcassets/AppIcon.appiconset/Icon-Small%25403x.png" style="width: 55px;border-radius: 12px;" />
+<img src="https://coding.net/u/four4/p/Diary/git/raw/master/Diary/Assets.xcassets/AppIcon.appiconset/Icon-Small%25403x.png" width="55px" style="border-radius: 12px;" />
 
 **启动页**
 
