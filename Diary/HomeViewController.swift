@@ -13,9 +13,12 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+<<<<<<< HEAD
         
         //Tabbar 颜色设置
         self.tabBarController?.tabBar.tintColor = UIColor (colorLiteralRed: 10/255, green: 195/255, blue: 10/255, alpha: 1)
+=======
+>>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
     }
 
     override func didReceiveMemoryWarning() {
