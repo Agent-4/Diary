@@ -42,7 +42,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="主页" image="tabbar_home" selectedImage="tabbar_home_highlighted" id="acW-dT-cKf">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -61,14 +61,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rtq-Ye-jwS">
-                                <frame key="frameInset" minY="551" width="600" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <tabBarItem title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="f91-CQ-w0V"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="我" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEB-ZA-id3">
                                 <frame key="frameInset" minX="16" minY="232" width="288" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -92,7 +84,9 @@
                             <constraint firstAttribute="leadingMargin" secondItem="iEB-ZA-id3" secondAttribute="leading" id="orj-0W-AKe"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="rys-DJ-xiJ"/>
+                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="rys-DJ-xiJ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6X-59-bBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,14 +104,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-t0-wZ7">
-                                <frame key="frameInset" minY="551" width="600" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <tabBarItem title="日记" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="gdr-9U-jjT"/>
-                                </items>
-                            </tabBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="日记" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yI-uO-Jf2">
                                 <frame key="frameInset" minX="16" minY="215" width="288" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
@@ -141,7 +127,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="d0R-Da-iKU" secondAttribute="trailing" id="ts7-ZH-CYx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="日记" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="uNG-kc-nOJ"/>
+                    <tabBarItem key="tabBarItem" title="日记" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="uNG-kc-nOJ">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qp-yg-K3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +167,9 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message" selectedImage="tabbar_message_highlighted" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message" selectedImage="tabbar_message_highlighted" id="cPa-gy-q4n">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

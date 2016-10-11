@@ -16,6 +16,7 @@ class HomeViewController: UIViewController {
         
         //Tabbar 颜色设置
         self.tabBarController?.tabBar.tintColor = UIColor (colorLiteralRed: 50/255, green: 205/255, blue: 50/255, alpha: 1)
+        
     }
 
     override func didReceiveMemoryWarning() {
