@@ -1,15 +1,5 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-=======
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-=======
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
->>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -51,19 +41,9 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="主页" image="tabbar_home" selectedImage="tabbar_home_highlighted" id="acW-dT-cKf">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
-=======
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="主页" image="tabbar_home" selectedImage="tabbar_home_highlighted" id="acW-dT-cKf"/>
-=======
-                    <tabBarItem key="tabBarItem" title="主页" image="home" id="acW-dT-cKf">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
->>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,15 +92,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="iEB-ZA-id3" secondAttribute="leading" id="orj-0W-AKe"/>
                         </constraints>
                     </view>
-<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="rys-DJ-xiJ"/>
-=======
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="rys-DJ-xiJ"/>
-=======
-                    <tabBarItem key="tabBarItem" title="我" image="me" id="rys-DJ-xiJ"/>
->>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o6X-59-bBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,15 +141,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="d0R-Da-iKU" secondAttribute="trailing" id="ts7-ZH-CYx"/>
                         </constraints>
                     </view>
-<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="日记" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="uNG-kc-nOJ"/>
-=======
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="日记" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="uNG-kc-nOJ"/>
-=======
-                    <tabBarItem key="tabBarItem" title="日记" image="first" id="uNG-kc-nOJ"/>
->>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Qp-yg-K3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,15 +179,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-<<<<<<< HEAD
                     <tabBarItem key="tabBarItem" title="消息" image="tabbar_message" selectedImage="tabbar_message_highlighted" id="cPa-gy-q4n"/>
-=======
-<<<<<<< HEAD
-                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message" selectedImage="tabbar_message_highlighted" id="cPa-gy-q4n"/>
-=======
-                    <tabBarItem key="tabBarItem" title="消息" image="messages" id="cPa-gy-q4n"/>
->>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,10 +209,6 @@
     </scenes>
     <resources>
         <image name="first" width="30" height="30"/>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
         <image name="me" width="32" height="32"/>
         <image name="tabbar_discover" width="30" height="30"/>
         <image name="tabbar_discover_highlighted" width="30" height="30"/>
@@ -266,13 +218,5 @@
         <image name="tabbar_message_highlighted" width="30" height="30"/>
         <image name="tabbar_profile" width="30" height="30"/>
         <image name="tabbar_profile_highlighted" width="30" height="30"/>
-<<<<<<< HEAD
-=======
-=======
-        <image name="home" width="30" height="30"/>
-        <image name="me" width="32" height="32"/>
-        <image name="messages" width="30" height="30"/>
->>>>>>> a403db5cb90b45d8b3fb8b8a00204b278185cd1d
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
     </resources>
 </document>

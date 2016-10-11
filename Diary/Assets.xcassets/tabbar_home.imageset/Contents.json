@@ -2,7 +2,6 @@
   "images" : [
     {
       "idiom" : "universal",
-<<<<<<< HEAD
       "scale" : "1x"
     },
     {
@@ -13,10 +12,6 @@
     {
       "idiom" : "universal",
       "scale" : "3x"
-=======
-      "filename" : "tabbar_home@2x.png",
-      "scale" : "2x"
->>>>>>> 816b1113f5babdec9371a2c4e7ae3c524940b605
     }
   ],
   "info" : {
