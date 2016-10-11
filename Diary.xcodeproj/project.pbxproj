@@ -202,6 +202,7 @@
 				TargetAttributes = {
 					46B234F21D9A765D00C3DC2B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8NK5NY4T9X;
 						LastSwiftMigration = 0800;
 					};
 					46B235081D9A765D00C3DC2B = {
@@ -407,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
 				INFOPLIST_FILE = Diary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.Diary;
@@ -420,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = 8NK5NY4T9X;
 				INFOPLIST_FILE = Diary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.Diary;
