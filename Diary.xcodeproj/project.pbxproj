@@ -17,6 +17,12 @@
 		46B235001D9A765D00C3DC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B234FF1D9A765D00C3DC2B /* Assets.xcassets */; };
 		46B2350E1D9A765D00C3DC2B /* DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2350D1D9A765D00C3DC2B /* DiaryTests.swift */; };
 		46B235191D9A765D00C3DC2B /* DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B235181D9A765D00C3DC2B /* DiaryUITests.swift */; };
+		46D394D01DAE63DD0066B284 /* GuideImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D394CC1DAE63DD0066B284 /* GuideImage1.png */; };
+		46D394D11DAE63DD0066B284 /* GuideImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D394CD1DAE63DD0066B284 /* GuideImage2.png */; };
+		46D394D21DAE63DD0066B284 /* GuideImage3.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D394CE1DAE63DD0066B284 /* GuideImage3.png */; };
+		46D394D31DAE63DD0066B284 /* GuideImage4.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D394CF1DAE63DD0066B284 /* GuideImage4.png */; };
+		46D394D51DAE69000066B284 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D394D41DAE69000066B284 /* GuideViewController.swift */; };
+		46D394D71DAEA1D20066B284 /* BackgroundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 46D394D61DAEA1D20066B284 /* BackgroundImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		46B235141D9A765D00C3DC2B /* DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B235181D9A765D00C3DC2B /* DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryUITests.swift; sourceTree = "<group>"; };
 		46B2351A1D9A765D00C3DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D394CC1DAE63DD0066B284 /* GuideImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GuideImage1.png; path = "../../iOS素材/引导页/GuideImage1.png"; sourceTree = "<group>"; };
+		46D394CD1DAE63DD0066B284 /* GuideImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GuideImage2.png; path = "../../iOS素材/引导页/GuideImage2.png"; sourceTree = "<group>"; };
+		46D394CE1DAE63DD0066B284 /* GuideImage3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GuideImage3.png; path = "../../iOS素材/引导页/GuideImage3.png"; sourceTree = "<group>"; };
+		46D394CF1DAE63DD0066B284 /* GuideImage4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GuideImage4.png; path = "../../iOS素材/引导页/GuideImage4.png"; sourceTree = "<group>"; };
+		46D394D41DAE69000066B284 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		46D394D61DAEA1D20066B284 /* BackgroundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackgroundImage.png; path = ../../BackgroundImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,7 @@
 		46B234EA1D9A765D00C3DC2B = {
 			isa = PBXGroup;
 			children = (
+				46D394CB1DAE63A40066B284 /* images */,
 				46B234F51D9A765D00C3DC2B /* Diary */,
 				46B2350C1D9A765D00C3DC2B /* DiaryTests */,
 				46B235171D9A765D00C3DC2B /* DiaryUITests */,
@@ -112,6 +125,7 @@
 				462B74751D9CFFF000095B3B /* Launch Screen.storyboard */,
 				467887191D9D8FB5003C2D2C /* MeViewController.swift */,
 				4678871B1D9D90C7003C2D2C /* DiaryViewController.swift */,
+				46D394D41DAE69000066B284 /* GuideViewController.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -132,6 +146,18 @@
 				46B2351A1D9A765D00C3DC2B /* Info.plist */,
 			);
 			path = DiaryUITests;
+			sourceTree = "<group>";
+		};
+		46D394CB1DAE63A40066B284 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				46D394D61DAEA1D20066B284 /* BackgroundImage.png */,
+				46D394CC1DAE63DD0066B284 /* GuideImage1.png */,
+				46D394CD1DAE63DD0066B284 /* GuideImage2.png */,
+				46D394CE1DAE63DD0066B284 /* GuideImage3.png */,
+				46D394CF1DAE63DD0066B284 /* GuideImage4.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +268,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46D394D21DAE63DD0066B284 /* GuideImage3.png in Resources */,
+				46D394D71DAEA1D20066B284 /* BackgroundImage.png in Resources */,
+				46D394D01DAE63DD0066B284 /* GuideImage1.png in Resources */,
 				462B74761D9CFFF000095B3B /* Launch Screen.storyboard in Resources */,
+				46D394D31DAE63DD0066B284 /* GuideImage4.png in Resources */,
+				46D394D11DAE63DD0066B284 /* GuideImage2.png in Resources */,
 				46B235001D9A765D00C3DC2B /* Assets.xcassets in Resources */,
 				46B234FE1D9A765D00C3DC2B /* Main.storyboard in Resources */,
 			);
@@ -274,6 +305,7 @@
 				46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */,
 				4678871A1D9D8FB5003C2D2C /* MeViewController.swift in Sources */,
 				46B234F91D9A765D00C3DC2B /* HomeViewController.swift in Sources */,
+				46D394D51DAE69000066B284 /* GuideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
