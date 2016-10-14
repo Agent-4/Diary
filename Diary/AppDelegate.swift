@@ -18,16 +18,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //NSThread.sleepForTimeInterval(2.0) //延长2秒
         // Override point for customization after application launch.
         
-        
         //添加标识，用于判断是否是第一次启动应用...
-        if (!(UserDefaults.standard.bool(forKey: "everLaunched"))) {
-            UserDefaults.standard.set(true, forKey: "everLaunched")
-            let guideViewController = GuideViewController()
-            self.window!.rootViewController=guideViewController
-        }
-        
+        buildKeyWindow()
         
         return true
+    }
+    
+    private func buildKeyWindow() {
+        
+        window = UIWindow(frame: (self.window?.bounds)!)
+        window!.makeKeyAndVisible()
+        
+        if (UserDefaults.standard.object(forKey: "isFristOpenApp") == nil) {
+            window?.rootViewController = GuideViewController()
+            UserDefaults.standard.set("fristTimeOpenApp", forKey: "isFristOpenApp")
+        }else {
+            let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
+            window?.rootViewController = mainStoryboard.instantiateInitialViewController()
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -41,7 +41,8 @@
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="主页" image="tabbar_home" selectedImage="tabbar_home_highlighted" id="acW-dT-cKf">
+                    <tabBarItem key="tabBarItem" title="主页" image="home" selectedImage="home_fill" id="acW-dT-cKf">
+                        <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="-1"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
                 </viewController>
@@ -84,7 +85,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="iEB-ZA-id3" secondAttribute="leading" id="orj-0W-AKe"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="rys-DJ-xiJ">
+                    <tabBarItem key="tabBarItem" title="我" image="me" selectedImage="me_fill" id="rys-DJ-xiJ">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
                 </viewController>
@@ -127,7 +128,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="d0R-Da-iKU" secondAttribute="trailing" id="ts7-ZH-CYx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="日记" image="tabbar_discover" selectedImage="tabbar_discover_highlighted" id="uNG-kc-nOJ">
+                    <tabBarItem key="tabBarItem" title="日记" image="light" selectedImage="light_fill" id="uNG-kc-nOJ">
+                        <inset key="imageInsets" minX="0.0" minY="-1" maxX="0.0" maxY="1"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
                 </viewController>
@@ -167,7 +169,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="消息" image="tabbar_message" selectedImage="tabbar_message_highlighted" id="cPa-gy-q4n">
+                    <tabBarItem key="tabBarItem" title="消息" image="message" selectedImage="message_fill" id="cPa-gy-q4n">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
                 </viewController>
@@ -198,13 +200,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="tabbar_discover" width="30" height="30"/>
-        <image name="tabbar_discover_highlighted" width="30" height="30"/>
-        <image name="tabbar_home" width="30" height="30"/>
-        <image name="tabbar_home_highlighted" width="30" height="30"/>
-        <image name="tabbar_message" width="30" height="30"/>
-        <image name="tabbar_message_highlighted" width="30" height="30"/>
-        <image name="tabbar_profile" width="30" height="30"/>
-        <image name="tabbar_profile_highlighted" width="30" height="30"/>
+        <image name="home" width="30" height="30"/>
+        <image name="home_fill" width="30" height="30"/>
+        <image name="light" width="30" height="30"/>
+        <image name="light_fill" width="30" height="30"/>
+        <image name="me" width="30" height="30"/>
+        <image name="me_fill" width="30" height="30"/>
+        <image name="message" width="30" height="30"/>
+        <image name="message_fill" width="30" height="30"/>
     </resources>
 </document>

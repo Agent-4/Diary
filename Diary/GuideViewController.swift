@@ -70,6 +70,7 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         // 给开始按钮设置圆角
         startBtn.layer.cornerRadius = 16.0
         startBtn.setTitleColor(UIColor.white, for: UIControlState.normal)
+        //按钮点击动作
         startBtn.addTarget(self, action: #selector(GuideViewController.guideOver), for: UIControlEvents.touchUpInside)
         startBtn.alpha = 0.0
         
@@ -83,7 +84,7 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         
     }
     
-    //引导结束，开始使用app
+    //引导结束，开始使用App
     func guideOver(){
         let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
         let viewController = mainStoryboard.instantiateInitialViewController()
@@ -95,15 +96,5 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 
