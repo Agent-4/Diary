@@ -26,9 +26,9 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>UIRequiredDeviceCapabilities</key>
+	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>armv7</string>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
@@ -40,9 +40,9 @@
 			<false/>
 		</dict>
 	</dict>
-	<key>UISupportedInterfaceOrientations</key>
+	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
+		<string>armv7</string>
 	</array>
 </dict>
 </plist>

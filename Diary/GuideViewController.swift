@@ -14,12 +14,13 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
     var scrollView: UIScrollView!
     var pageControl: UIPageControl!
     var startBtn: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //引导页面 函数调用
         guideViewLayout()
+
         
     }
     
@@ -43,6 +44,7 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
     
     //载入自定义引导页面布局
     func guideViewLayout(){
+        
         let frame = self.view.bounds
         
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
@@ -89,6 +91,11 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
         let viewController = mainStoryboard.instantiateInitialViewController()
         self.present(viewController!, animated: true, completion:nil)
+    }
+    
+    //引导页面 隐藏状态栏
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     override func didReceiveMemoryWarning() {
