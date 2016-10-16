@@ -93,8 +93,7 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         let viewController = mainStoryboard.instantiateInitialViewController()
         
         viewController?.modalTransitionStyle = .crossDissolve
-        viewController?.modalPresentationStyle = .overFullScreen
-        
+                
         self.present(viewController!, animated: true, completion:nil)
     }
     
