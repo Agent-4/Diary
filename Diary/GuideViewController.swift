@@ -24,7 +24,7 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         
     }
     
-    //scrollview 委托
+    //scrollview 委托 判断是否滑动到最后一张以显示"欢迎体验"按钮
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let frame = self.view.bounds
         let offset = scrollView.contentOffset
@@ -44,7 +44,6 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
     
     //载入自定义引导页面布局
     func guideViewLayout(){
-        
         let frame = self.view.bounds
         
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height))
@@ -53,11 +52,13 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         scrollView.showsVerticalScrollIndicator=false
         scrollView.contentSize = CGSize(width: 4 * frame.size.width, height: frame.size.height)
         
-        for i in 1...4 {
-            let image = UIImage(named: "GuideImage\(Int(i)).png")
+        for i in 0...3 {
+            let image = UIImage(named: "GuideImage\(Int(i+1)).png")
             let imageView = UIImageView(image: image)
-            imageView.frame = CGRect(x: CGFloat((i-1))*frame.size.width, y: 0, width: frame.size.width, height: frame.size.height)
+            
+            imageView.frame = CGRect(x: CGFloat((i))*frame.size.width, y: 0, width: frame.size.width, height: frame.size.height)
             imageView.contentMode = UIViewContentMode.scaleToFill
+            
             scrollView.addSubview(imageView)
             
         }
@@ -90,6 +91,10 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
     func guideOver(){
         let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
         let viewController = mainStoryboard.instantiateInitialViewController()
+        
+        viewController?.modalTransitionStyle = .crossDissolve
+        viewController?.modalPresentationStyle = .overFullScreen
+        
         self.present(viewController!, animated: true, completion:nil)
     }
     

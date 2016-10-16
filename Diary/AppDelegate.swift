@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //NSThread.sleepForTimeInterval(2.0) //延长2秒
         // Override point for customization after application launch.
         
-        //添加标识，用于判断是否是第一次启动应用...
+        //添加标识，用于判断是否是第一次启动应用....
         buildKeyWindow()
         
         return true
@@ -29,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: (self.window?.bounds)!)
         window!.makeKeyAndVisible()
         
-        if (UserDefaults.standard.object(forKey: "isFristOpenApp") == nil) {
-            window?.rootViewController = GuideViewController()
-            UserDefaults.standard.set("fristTimeOpenApp", forKey: "isFristOpenApp")
+        if (UserDefaults.standard.object(forKey: "fristTimeOpenApp") == nil) {
+            UserDefaults.standard.set("fristTimeOpenApp", forKey: "fristTimeOpenApp")
+            self.window!.rootViewController = GuideViewController()
         }else {
             let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
             window?.rootViewController = mainStoryboard.instantiateInitialViewController()
