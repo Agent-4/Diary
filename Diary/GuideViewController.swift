@@ -20,8 +20,6 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
         
         //引导页面 函数调用
         guideViewLayout()
-
-        
     }
     
     //scrollview 委托 判断是否滑动到最后一张以显示"欢迎体验"按钮
@@ -63,7 +61,7 @@ class GuideViewController: UIViewController,UIScrollViewDelegate {
             
         }
         
-        pageControl = UIPageControl(frame: CGRect(x: frame.size.width/2-100, y: frame.size.height-80, width: 200, height: 100))
+        pageControl = UIPageControl(frame: CGRect(x: frame.size.width/2-100, y: frame.size.height-80, width: 200, height: 140))
         startBtn = UIButton(frame: CGRect(x: frame.size.width/2-55, y: frame.size.height-100, width: 110, height: 35))
         pageControl.numberOfPages = 4
         pageControl.currentPage = 0

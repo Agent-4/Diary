@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		462B74761D9CFFF000095B3B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462B74751D9CFFF000095B3B /* Launch Screen.storyboard */; };
+		466510731DB641B7002EF1F3 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466510721DB641B7002EF1F3 /* SettingViewController.swift */; };
 		4678871A1D9D8FB5003C2D2C /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467887191D9D8FB5003C2D2C /* MeViewController.swift */; };
 		4678871C1D9D90C7003C2D2C /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678871B1D9D90C7003C2D2C /* DiaryViewController.swift */; };
 		46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B234F61D9A765D00C3DC2B /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		462B74751D9CFFF000095B3B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		466510721DB641B7002EF1F3 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		467887191D9D8FB5003C2D2C /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		4678871B1D9D90C7003C2D2C /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		46B234F31D9A765D00C3DC2B /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466510711DB64175002EF1F3 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				466510721DB641B7002EF1F3 /* SettingViewController.swift */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
 		46B234EA1D9A765D00C3DC2B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +115,7 @@
 		46B234F51D9A765D00C3DC2B /* Diary */ = {
 			isa = PBXGroup;
 			children = (
+				466510711DB64175002EF1F3 /* Setting */,
 				46B234F61D9A765D00C3DC2B /* AppDelegate.swift */,
 				46B234F81D9A765D00C3DC2B /* HomeViewController.swift */,
 				46B234FA1D9A765D00C3DC2B /* MessagesViewController.swift */,
@@ -277,6 +288,7 @@
 				46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */,
 				4678871A1D9D8FB5003C2D2C /* MeViewController.swift in Sources */,
 				46B234F91D9A765D00C3DC2B /* HomeViewController.swift in Sources */,
+				466510731DB641B7002EF1F3 /* SettingViewController.swift in Sources */,
 				46D394D51DAE69000066B284 /* GuideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

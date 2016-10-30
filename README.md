@@ -13,4 +13,4 @@
 <br>
 **引导页**（随便找的4张图片）
 <br>
-<img src="https://coding.net/api/share/image/14bffa8e-8b59-46ff-9054-56452f45696a?width=1440&type=2" />
+<img src="http://four4.coding.me/css/images/GuideView.gif" />

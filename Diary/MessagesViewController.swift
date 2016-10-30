@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  MessagesViewController.swift
 //  Diary
 //
 //  Created by moxiaohao on 16/9/27.
@@ -12,9 +12,11 @@ class MessagesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.backgroundColor = UIColor.white
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -1,158 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--主页-->
-        <scene sceneID="hNz-n2-bh7">
+        <scene sceneID="OTV-QT-OVV">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aJd-9d-hur">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.26455509662628174" green="0.70047646760940552" blue="0.21070954203605652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="留忆" id="LKt-Pe-AUL"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="主页" image="home" selectedImage="home_fill" id="acW-dT-cKf">
-                        <inset key="imageInsets" minX="0.0" minY="1" maxX="0.0" maxY="-1"/>
+                <navigationController id="8q9-gk-1qG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="主页" image="home" selectedImage="home_fill" id="clc-yW-QIJ">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="gBP-KA-tFJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VX4-0m-9Cg" kind="relationship" relationship="rootViewController" id="xaH-vg-Ire"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJv-lD-Lry" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-124.64788732394366"/>
+            <point key="canvasLocation" x="750" y="-125"/>
+        </scene>
+        <!--留忆-->
+        <scene sceneID="sd5-aY-whT">
+            <objects>
+                <viewController id="VX4-0m-9Cg" customClass="HomeViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="留忆" id="aZX-Pv-O2S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTe-hx-UAS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="-126"/>
         </scene>
         <!--我-->
-        <scene sceneID="7ls-2K-771">
+        <scene sceneID="uEM-Rh-6fb">
             <objects>
-                <viewController id="FkA-nP-0ZC" customClass="MeViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zlq-0C-5Dd"/>
-                        <viewControllerLayoutGuide type="bottom" id="DCJ-eJ-Ppg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4ON-X5-aVs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lof-hp-afG">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.26455509662628174" green="0.70047646760940552" blue="0.21070954203605652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="我" id="Zfe-pG-0gz">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="settingh" id="BtW-Qx-oO6">
-                                            <inset key="imageInsets" minX="4" minY="4" maxX="4" maxY="4"/>
-                                            <color key="tintColor" red="0.26455509662628174" green="0.70047646760940552" blue="0.21070954203605652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="我" image="me" selectedImage="me_fill" id="rys-DJ-xiJ">
+                <navigationController id="NYx-fT-NKR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我" image="me" selectedImage="me_fill" id="Sl7-VR-FiL">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o6X-59-bBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="FHP-tb-Knt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="eTe-Kd-InD" kind="relationship" relationship="rootViewController" id="fQj-QO-Nyh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLk-Vp-UjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1945.7746478873239"/>
+            <point key="canvasLocation" x="748" y="1906"/>
         </scene>
-        <!--日记-->
-        <scene sceneID="cZV-JA-ycF">
+        <!--我-->
+        <scene sceneID="mhq-sX-l86">
             <objects>
-                <viewController id="bhO-Zd-Dt0" customClass="DiaryViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eTe-Kd-InD" customClass="MeViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="我" id="6tb-I0-YMA">
+                        <barButtonItem key="rightBarButtonItem" image="setting1" id="0Oa-0o-tyb">
+                            <inset key="imageInsets" minX="6" minY="6" maxX="6" maxY="6"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="LvG-Qy-Dx8" kind="show" id="EeE-cH-bbY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMx-b1-s4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="1906"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="Uve-gd-1Fw">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="LvG-Qy-Dx8" customClass="SettingViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lnd-Oi-QOH"/>
-                        <viewControllerLayoutGuide type="bottom" id="3T1-rA-NLL"/>
+                        <viewControllerLayoutGuide type="top" id="rsl-X5-uHX"/>
+                        <viewControllerLayoutGuide type="bottom" id="MAL-Ll-Y4W"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Hs1-gp-irO">
+                    <view key="view" contentMode="scaleToFill" id="3kz-al-QTe">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7C-Ye-px8">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.26455509662628174" green="0.70047646760940552" blue="0.21070954203605652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="日记" id="zkJ-gY-3EZ"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="日记" image="light" selectedImage="light_fill" id="uNG-kc-nOJ">
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVK-VV-JWJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2224" y="1906"/>
+        </scene>
+        <!--日记-->
+        <scene sceneID="xbT-3A-etJ">
+            <objects>
+                <navigationController id="9Nq-E8-rQU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="日记" image="light" selectedImage="light_fill" id="Ruv-GC-itI">
                         <inset key="imageInsets" minX="0.0" minY="-1" maxX="0.0" maxY="1"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Qp-yg-K3r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="xHY-jE-0g0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6SA-VH-7kg" kind="relationship" relationship="rootViewController" id="aPr-jE-cPp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="okL-UZ-WrK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="1239.0845070422536"/>
+            <point key="canvasLocation" x="750" y="547"/>
+        </scene>
+        <!--日记-->
+        <scene sceneID="0hi-wL-Jeq">
+            <objects>
+                <viewController id="6SA-VH-7kg" customClass="DiaryViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="日记" id="43k-fO-KZM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6L-vo-4EL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="546"/>
         </scene>
         <!--消息-->
-        <scene sceneID="wg7-f3-ORb">
+        <scene sceneID="zLe-hv-Uyg">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="MessagesViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwP-cI-DdF">
-                                <frame key="frameInset" minY="20" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.26455509662628174" green="0.70047646760940552" blue="0.21070954203605652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="消息" id="w1j-hB-hdh"/>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="消息" image="message" selectedImage="message_fill" id="cPa-gy-q4n">
+                <navigationController id="t9y-Ew-STt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="消息" image="message" selectedImage="message_fill" id="6fJ-Qi-cp5">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="aRz-Xf-ykV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iVO-LE-Bb8" kind="relationship" relationship="rootViewController" id="ZAW-EL-fEd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bA-Ga-j3W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="556"/>
+            <point key="canvasLocation" x="750" y="1241"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="oyS-Zn-MSC">
+            <objects>
+                <viewController id="iVO-LE-Bb8" customClass="MessagesViewController" customModule="Diary" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="消息" id="IWE-5u-NoP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKT-rg-Q1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485" y="1240"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -165,10 +167,10 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="bhO-Zd-Dt0" kind="relationship" relationship="viewControllers" id="YA6-nR-IgN"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="FkA-nP-0ZC" kind="relationship" relationship="viewControllers" id="7xY-FI-x00"/>
+                        <segue destination="8q9-gk-1qG" kind="relationship" relationship="viewControllers" id="zvX-nH-RDr"/>
+                        <segue destination="9Nq-E8-rQU" kind="relationship" relationship="viewControllers" id="iwQ-7h-tgE"/>
+                        <segue destination="t9y-Ew-STt" kind="relationship" relationship="viewControllers" id="2pc-lD-Ass"/>
+                        <segue destination="NYx-fT-NKR" kind="relationship" relationship="viewControllers" id="U5S-pr-td4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -185,6 +187,6 @@
         <image name="me_fill" width="30" height="30"/>
         <image name="message" width="30" height="30"/>
         <image name="message_fill" width="30" height="30"/>
-        <image name="settingh" width="44" height="44"/>
+        <image name="setting1" width="30" height="30"/>
     </resources>
 </document>
