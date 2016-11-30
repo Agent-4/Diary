@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //NSThread.sleepForTimeInterval(2.0) //延长2秒
         // Override point for customization after application launch.
         
         //添加标识，用于判断是否是第一次启动应用....
@@ -35,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else {
             let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
             window?.rootViewController = mainStoryboard.instantiateInitialViewController()
+            UserDefaults.standard.set("fristTimeOpenApp", forKey: "fristTimeOpenApp")
         }
     }
 
