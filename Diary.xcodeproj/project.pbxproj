@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		462B74761D9CFFF000095B3B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 462B74751D9CFFF000095B3B /* Launch Screen.storyboard */; };
-		469B01DF1DEEAB3E005EB6D8 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01DE1DEEAB3E005EB6D8 /* SettingViewController.swift */; };
 		469B01E31DEEABEB005EB6D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E21DEEABEB005EB6D8 /* HomeViewController.swift */; };
-		469B01E51DEEABFA005EB6D8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E41DEEABFA005EB6D8 /* MessagesViewController.swift */; };
 		469B01E71DEEAC08005EB6D8 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E61DEEAC08005EB6D8 /* DiaryViewController.swift */; };
 		469B01E91DEEAC14005EB6D8 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E81DEEAC14005EB6D8 /* MeViewController.swift */; };
 		469B01ED1DEEACCF005EB6D8 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01EC1DEEACCF005EB6D8 /* GuideViewController.swift */; };
+		46AE0F191DF19097003BE887 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AE0F181DF19097003BE887 /* SettingViewController.swift */; };
+		46AE0F1B1DF19265003BE887 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46AE0F1A1DF19265003BE887 /* MessagesTableViewController.swift */; };
 		46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B234F61D9A765D00C3DC2B /* AppDelegate.swift */; };
 		46B234FE1D9A765D00C3DC2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B234FC1D9A765D00C3DC2B /* Main.storyboard */; };
 		46B235001D9A765D00C3DC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B234FF1D9A765D00C3DC2B /* Assets.xcassets */; };
 		46B2350E1D9A765D00C3DC2B /* DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2350D1D9A765D00C3DC2B /* DiaryTests.swift */; };
 		46B235191D9A765D00C3DC2B /* DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B235181D9A765D00C3DC2B /* DiaryUITests.swift */; };
+		46F634631DF1E449002D8834 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F634621DF1E449002D8834 /* MessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +41,12 @@
 
 /* Begin PBXFileReference section */
 		462B74751D9CFFF000095B3B /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		469B01DE1DEEAB3E005EB6D8 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		469B01E21DEEABEB005EB6D8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		469B01E41DEEABFA005EB6D8 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		469B01E61DEEAC08005EB6D8 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		469B01E81DEEAC14005EB6D8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		469B01EC1DEEACCF005EB6D8 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		46AE0F181DF19097003BE887 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		46AE0F1A1DF19265003BE887 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
 		46B234F31D9A765D00C3DC2B /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B234F61D9A765D00C3DC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46B234FD1D9A765D00C3DC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +58,7 @@
 		46B235141D9A765D00C3DC2B /* DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B235181D9A765D00C3DC2B /* DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryUITests.swift; sourceTree = "<group>"; };
 		46B2351A1D9A765D00C3DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F634621DF1E449002D8834 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,14 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		469B01D71DEEA7B8005EB6D8 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-				469B01DE1DEEAB3E005EB6D8 /* SettingViewController.swift */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
 		469B01D81DEEA842005EB6D8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +97,7 @@
 		469B01D91DEEA867005EB6D8 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				46AE0F171DF19097003BE887 /* Settings */,
 				469B01E81DEEAC14005EB6D8 /* MeViewController.swift */,
 			);
 			path = Me;
@@ -111,7 +106,8 @@
 		469B01DA1DEEA8BA005EB6D8 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				469B01E41DEEABFA005EB6D8 /* MessagesViewController.swift */,
+				46AE0F1A1DF19265003BE887 /* MessagesTableViewController.swift */,
+				46F634621DF1E449002D8834 /* MessagesViewController.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -138,6 +134,14 @@
 				469B01EC1DEEACCF005EB6D8 /* GuideViewController.swift */,
 			);
 			path = Guide;
+			sourceTree = "<group>";
+		};
+		46AE0F171DF19097003BE887 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				46AE0F181DF19097003BE887 /* SettingViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		46B234EA1D9A765D00C3DC2B = {
@@ -168,7 +172,6 @@
 				469B01DA1DEEA8BA005EB6D8 /* Messages */,
 				469B01D91DEEA867005EB6D8 /* Me */,
 				469B01D81DEEA842005EB6D8 /* Home */,
-				469B01D71DEEA7B8005EB6D8 /* Settings */,
 				46B234F61D9A765D00C3DC2B /* AppDelegate.swift */,
 				46B234FC1D9A765D00C3DC2B /* Main.storyboard */,
 				46B234FF1D9A765D00C3DC2B /* Assets.xcassets */,
@@ -331,12 +334,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				469B01E51DEEABFA005EB6D8 /* MessagesViewController.swift in Sources */,
 				469B01E91DEEAC14005EB6D8 /* MeViewController.swift in Sources */,
 				46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */,
+				46AE0F1B1DF19265003BE887 /* MessagesTableViewController.swift in Sources */,
 				469B01ED1DEEACCF005EB6D8 /* GuideViewController.swift in Sources */,
-				469B01DF1DEEAB3E005EB6D8 /* SettingViewController.swift in Sources */,
 				469B01E71DEEAC08005EB6D8 /* DiaryViewController.swift in Sources */,
+				46AE0F191DF19097003BE887 /* SettingViewController.swift in Sources */,
+				46F634631DF1E449002D8834 /* MessagesViewController.swift in Sources */,
 				469B01E31DEEABEB005EB6D8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
