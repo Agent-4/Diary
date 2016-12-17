@@ -39,7 +39,10 @@ class MessagesTableViewController: UITableViewController {
         myNAV = UINavigationBar.init(frame: CGRect(x: 0, y: 0, width: 320, height: 44))
         
     }
-
+    override func viewWillLayoutSubviews() {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

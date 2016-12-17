@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class GuideViewController: UIViewController, UIScrollViewDelegate {
     
     var scrollView: UIScrollView!
@@ -17,6 +16,7 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.automaticallyAdjustsScrollViewInsets = false
         self.view.backgroundColor = UIColor.white
         //引导页面 函数调用
@@ -25,15 +25,15 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
     
     //载入自定义引导页面布局
     func guideViewLayout(){
-        let arr = ["GuideImage1.jpg","GuideImage2.jpg","GuideImage3.jpg","GuideImage4.jpg"]
+        let arr = ["GuideImage1.jpg", "GuideImage2.jpg", "GuideImage3.jpg", "GuideImage4.jpg"]
         let frameWidth = self.view.bounds.size.width
         let frameHeight = self.view.bounds.size.height
         
         scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: frameWidth, height: frameHeight))
-        scrollView.delegate=self
-        scrollView.isPagingEnabled=true
-        scrollView.showsHorizontalScrollIndicator=false
-        scrollView.showsVerticalScrollIndicator=false
+        scrollView.delegate = self
+        scrollView.isPagingEnabled = true
+        scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         scrollView.contentSize = CGSize(width: CGFloat(Float(arr.count)) * frameWidth, height: frameHeight)
         self.view.addSubview(scrollView)
         
@@ -87,11 +87,11 @@ class GuideViewController: UIViewController, UIScrollViewDelegate {
     
     //引导结束，开始使用App
     func guideOver(){
-        let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = mainStoryboard.instantiateInitialViewController()
         
         viewController?.modalTransitionStyle = .crossDissolve
-        self.present(viewController!, animated: true, completion:nil)
+        self.present(viewController!, animated: true, completion: nil)
     }
     
     //引导页面 隐藏状态栏

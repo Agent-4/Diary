@@ -35,29 +35,21 @@ class MessagesViewController: UIViewController, UIGestureRecognizerDelegate, UIT
                 "评论",
                 "系统消息"])
         ]
-        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height),style: .grouped)
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height), style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self;
         tableView.backgroundColor = UIColor.init(red: 245/255, green: 248/255, blue: 249/255, alpha: 1.0)
         tableView.separatorColor = UIColor.init(red: 228/255, green: 228/255, blue: 228/255, alpha: 1.0)
         tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0)
         
-//        let Nav1 = UINib(nibName:"MessagesNavigationBarView", bundle:nil)
-//        let NavBar = Nav1.instantiate(withOwner: self, options: nil).first as! UIView
-        
         view.addSubview(tableView)
-//        view.addSubview(NavBar)
+
         //去除Navigation Bar 底部黑线
         MessagesNavigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         MessagesNavigationBar.shadowImage = UIImage()
         tableView.addSubview(MessageTopView)
         tableView.addSubview(MessagesNavigationBar)
         tableView.tableFooterView = UIView(frame:CGRect.zero)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -82,12 +74,12 @@ class MessagesViewController: UIViewController, UIGestureRecognizerDelegate, UIT
     //点击cell行时，让cell背景颜色一闪而过
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        if indexPath.row == 0 {
-            let viewController = SettingViewController()
-            viewController.hidesBottomBarWhenPushed = true
-            navigationItem.backBarButtonItem = UIBarButtonItem(title: "",style: UIBarButtonItemStyle.plain,target: nil, action: nil)
-            self.navigationController?.pushViewController(viewController, animated: true)
-        }
+//        if indexPath.row == 0 {
+//            let viewController = SettingViewController()
+//            viewController.hidesBottomBarWhenPushed = true
+//            navigationItem.backBarButtonItem = UIBarButtonItem(title: "",style: UIBarButtonItemStyle.plain,target: nil, action: nil)
+//            self.navigationController?.pushViewController(viewController, animated: true)
+//        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -102,17 +94,6 @@ class MessagesViewController: UIViewController, UIGestureRecognizerDelegate, UIT
         messagesCell?.accessoryView = rightIcon1
         messagesCell?.textLabel?.text = data![indexPath.row]
         messagesCell?.textLabel?.font = UIFont.systemFont(ofSize: 14)
-        
-//        let Marr = ["messageAT.png","GuideImage2.jpg","GuideImage3.jpg","messageAT.png"]
-//        
-//        for i in 0 ..< Marr.count{
-//            let MimageView = UIImageView.init(frame: CGRect(x: 12, y: 9.5, width: 30, height: 30))
-//            MimageView.image = UIImage(named: Marr[i])
-//            cell?.imageView?.image = MimageView.image
-//        }
-////        if indexPath.row == 0 {
-////            
-////        }
         messagesCell?.imageView?.image = UIImage(named: messagesItem["image1"]!)
         //修改cell选中的背景色
         messagesCell?.selectedBackgroundView = UIView.init()
@@ -125,14 +106,10 @@ class MessagesViewController: UIViewController, UIGestureRecognizerDelegate, UIT
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
 
 }
