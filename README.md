@@ -9,11 +9,11 @@
 
 **图标**
 <br>
-<img src="https://coding.net/u/four4/p/Diary/git/raw/master/Diary/Assets.xcassets/AppIcon.appiconset/Icon-Small%25403x.png" width="50px" />
+<img src="https://coding.net/u/four4/p/Diary/git/raw/master/Diary/Assets.xcassets/AppIcon.appiconset/Icon-Small%25403x.png" width="60px" />
 <br>
 **启动页**
 <br>
-<img src="http://og7heq3lq.bkt.clouddn.com/LaunchScreen.png" width="190px" />
+<img src="http://og7heq3lq.bkt.clouddn.com/LaunchScreen.png" width="316px" />
 <br>
 **引导页**（随便找的4张图片）
 <br>
