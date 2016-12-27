@@ -7,14 +7,14 @@
 个人日记 iOS客户端 <br>
 使用 Swift3.0 语言编写，暂时只有以下几点多东西！（更新中....）
 
-**图标**
-<br>
+**App 图标**
+
 <img src="https://coding.net/u/four4/p/Diary/git/raw/master/Diary/Assets.xcassets/AppIcon.appiconset/Icon-Small%25403x.png" width="60px" />
-<br>
-**启动页**
-<br>
+
+**App 启动页**
+
 <img src="http://og7heq3lq.bkt.clouddn.com/LaunchScreen.png" width="315px" />
-<br>
-**引导页**（随便找的4张图片）
-<br>
+
+**App 引导页**（随便找的4张图片，暂未设计）
+
 <img src="http://four4.coding.me/css/images/GuideView.gif" />
