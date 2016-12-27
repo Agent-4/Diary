@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://coding.net/u/four4/p/Diary/git/blob/master/LICENSE)
 
-个人日记 iOS客户端
+个人日记 iOS客户端 <br>
 使用 Swift3.0 语言编写，暂时只有以下几点多东西！（更新中....）
 
 **图标**
