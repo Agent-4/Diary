@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingViewController: UIViewController,UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource {
+class SettingViewController: UIViewController, UIGestureRecognizerDelegate, UITableViewDelegate, UITableViewDataSource {
 
     var settingNavigationBar: UINavigationBar?
     

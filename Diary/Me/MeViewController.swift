@@ -181,6 +181,13 @@ class MeViewController: UIViewController, UIGestureRecognizerDelegate, UITableVi
     //点击cell行时，让cell背景颜色一闪而过
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                let viewController = ProfileViewController()
+                viewController.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        }
         if indexPath.section == 1 {
             if indexPath.row == 1 {
                 let viewController = SettingViewController()

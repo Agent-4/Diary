@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4615C2211E012D1B00CFCAD5 /* RetrievePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4615C2201E012D1B00CFCAD5 /* RetrievePasswordViewController.swift */; };
+		46500A961E096BC40091CB50 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46500A951E096BC40091CB50 /* ProfileViewController.swift */; };
 		466B17D11E0429D9002752A9 /* UserTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B17D01E0429D9002752A9 /* UserTermsViewController.swift */; };
 		469B01E31DEEABEB005EB6D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E21DEEABEB005EB6D8 /* HomeViewController.swift */; };
 		469B01E71DEEAC08005EB6D8 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E61DEEAC08005EB6D8 /* DiaryViewController.swift */; };
@@ -20,6 +21,7 @@
 		46B235001D9A765D00C3DC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B234FF1D9A765D00C3DC2B /* Assets.xcassets */; };
 		46B2350E1D9A765D00C3DC2B /* DiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B2350D1D9A765D00C3DC2B /* DiaryTests.swift */; };
 		46B235191D9A765D00C3DC2B /* DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B235181D9A765D00C3DC2B /* DiaryUITests.swift */; };
+		46BFB35F1E07F2E600DC87CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BFB35E1E07F2E600DC87CC /* Launch Screen.storyboard */; };
 		46E4E8EC1DF93ACC00217D23 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E4E8EB1DF93ACC00217D23 /* AboutAppViewController.swift */; };
 		46F634631DF1E449002D8834 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F634621DF1E449002D8834 /* MessagesViewController.swift */; };
 		46F79C451DFEDE430051C541 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F79C441DFEDE430051C541 /* SignInViewController.swift */; };
@@ -56,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		4615C2201E012D1B00CFCAD5 /* RetrievePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrievePasswordViewController.swift; sourceTree = "<group>"; };
+		46500A951E096BC40091CB50 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		466B17D01E0429D9002752A9 /* UserTermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTermsViewController.swift; sourceTree = "<group>"; };
 		469B01E21DEEABEB005EB6D8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		469B01E61DEEAC08005EB6D8 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		46B235141D9A765D00C3DC2B /* DiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B235181D9A765D00C3DC2B /* DiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryUITests.swift; sourceTree = "<group>"; };
 		46B2351A1D9A765D00C3DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BFB35E1E07F2E600DC87CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Diary/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		46E4E8EB1DF93ACC00217D23 /* AboutAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
 		46F634621DF1E449002D8834 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		46F79C441DFEDE430051C541 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 			children = (
 				46AE0F171DF19097003BE887 /* Settings */,
 				469B01E81DEEAC14005EB6D8 /* MeViewController.swift */,
+				46500A951E096BC40091CB50 /* ProfileViewController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 				46B234FC1D9A765D00C3DC2B /* Main.storyboard */,
 				46B234FF1D9A765D00C3DC2B /* Assets.xcassets */,
 				46B234F61D9A765D00C3DC2B /* AppDelegate.swift */,
+				46BFB35E1E07F2E600DC87CC /* Launch Screen.storyboard */,
 				46B2350C1D9A765D00C3DC2B /* DiaryTests */,
 				46B235171D9A765D00C3DC2B /* DiaryUITests */,
 				46B234F41D9A765D00C3DC2B /* Products */,
@@ -301,6 +307,7 @@
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 8NK5NY4T9X;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					46B235081D9A765D00C3DC2B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -339,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BFB35F1E07F2E600DC87CC /* Launch Screen.storyboard in Resources */,
 				46B235001D9A765D00C3DC2B /* Assets.xcassets in Resources */,
 				46B234FE1D9A765D00C3DC2B /* Main.storyboard in Resources */,
 			);
@@ -369,6 +377,7 @@
 				46F79C471DFEDEC10051C541 /* RegisterViewController.swift in Sources */,
 				46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */,
 				466B17D11E0429D9002752A9 /* UserTermsViewController.swift in Sources */,
+				46500A961E096BC40091CB50 /* ProfileViewController.swift in Sources */,
 				4615C2211E012D1B00CFCAD5 /* RetrievePasswordViewController.swift in Sources */,
 				46E4E8EC1DF93ACC00217D23 /* AboutAppViewController.swift in Sources */,
 				46AE0F1B1DF19265003BE887 /* MessagesTableViewController.swift in Sources */,
@@ -517,7 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8NK5NY4T9X;
 				INFOPLIST_FILE = Diary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -531,7 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 8NK5NY4T9X;
 				INFOPLIST_FILE = Diary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

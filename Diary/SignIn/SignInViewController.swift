@@ -107,18 +107,33 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate, UITex
         self.view.addSubview(label)
         
         //weChat按钮
-        let wechatButton = UIButton.init(frame: CGRect(x: self.view.frame.width/3 - 46, y: self.view.frame.height - 60, width: 36, height: 36))
+        let wechatButton = UIButton.init(frame: CGRect(x: self.view.frame.width/3 - 46, y: self.view.frame.height - 60, width: 36, height: 46))
         wechatButton.setImage(UIImage(named: "wechat"), for: .normal)
+        wechatButton.setTitle("微信", for: .normal)
+        wechatButton.setTitleColor(UIColor.lightGray, for: .normal)
+        wechatButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
+        wechatButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 10 , right: 0)
+        wechatButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: -65, bottom: -36, right: 0)
         self.view.addSubview(wechatButton)
         
         //QQ按钮
-        let qqButton = UIButton.init(frame: CGRect(x: self.view.frame.width/2 - 18, y: self.view.frame.height - 60, width: 36, height: 36))
+        let qqButton = UIButton.init(frame: CGRect(x: self.view.frame.width/2 - 18, y: self.view.frame.height - 60, width: 36, height: 46))
         qqButton.setImage(UIImage(named: "qq"), for: .normal)
+        qqButton.setTitle("QQ", for: .normal)
+        qqButton.setTitleColor(UIColor.lightGray, for: .normal)
+        qqButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
+        qqButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 10 , right: 0)
+        qqButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: -65, bottom: -36, right: 0)
         self.view.addSubview(qqButton)
         
         //weibo按钮
-        let weiboButton = UIButton.init(frame: CGRect(x: self.view.frame.width/3 * 2 + 10, y: self.view.frame.height - 60, width: 36, height: 36))
+        let weiboButton = UIButton.init(frame: CGRect(x: self.view.frame.width/3 * 2 + 10, y: self.view.frame.height - 60, width: 36, height: 46))
         weiboButton.setImage(UIImage(named: "weibo"), for: .normal)
+        weiboButton.setTitle("微博", for: .normal)
+        weiboButton.setTitleColor(UIColor.lightGray, for: .normal)
+        weiboButton.titleLabel?.font = UIFont.systemFont(ofSize: 10)
+        weiboButton.imageEdgeInsets = UIEdgeInsets(top: 0, left: 0 , bottom: 10 , right: 0)
+        weiboButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: -65, bottom: -36, right: 0)
         self.view.addSubview(weiboButton)
         
     }
