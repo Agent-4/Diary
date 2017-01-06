@@ -13,16 +13,16 @@
 
 **App 启动页**
 
-<img src="http://og7heq3lq.bkt.clouddn.com/LaunchScreen.png" width="315px" />
+<img src="http://og7heq3lq.bkt.clouddn.com/LaunchScreen.png" width="200px" />
 
 **App 引导页**（随便找的4张图片，暂未设计）
 
-<img src="http://four4.coding.me/css/images/GuideView.gif" />
+<img src="http://four4.coding.me/css/images/GuideView.gif" width="200px" />
 
 **App密码锁**
 
-<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock1.png" />
-<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock2.png" />
-<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock3.png" />
+<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock1.png" width="200px" />
+<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock2.png" width="200px" />
+<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock3.png" width="200px" />
 
 
