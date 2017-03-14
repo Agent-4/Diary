@@ -151,6 +151,13 @@ class SettingViewController: UIViewController, UIGestureRecognizerDelegate, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.section == 0 {
+            if indexPath.row == 1 {
+                let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "CodedLockView")
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        }
         if indexPath.section == 2 {
             if indexPath.row == 2 {
                 let viewController = AboutAppViewController()

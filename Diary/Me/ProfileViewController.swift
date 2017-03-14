@@ -15,6 +15,13 @@ class ProfileViewController: UIViewController, UIGestureRecognizerDelegate, UITa
 
         self.view.backgroundColor = UIColor.white
         
+        let myWeb = UIWebView.init(frame: CGRect(x: 0, y: 20, width: self.view.frame.width, height:self.view.frame.height))
+        myWeb.backgroundColor = UIColor.white
+        let requset = URLRequest.init(url: URL(string: "http://moxiaohao.com")!)
+        myWeb.loadRequest(requset)
+        
+        self.view.addSubview(myWeb)
+        
     }
 
     override func didReceiveMemoryWarning() {

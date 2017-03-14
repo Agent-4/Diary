@@ -28,12 +28,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: (self.window?.bounds)!)
         window!.makeKeyAndVisible()
         
+        let saveUserPWD = UserDefaults.standard
+        saveUserPWD.set("1234", forKey: "userPassword")
+        
         if (UserDefaults.standard.object(forKey: "fristTimeOpenApp") == nil) {
             UserDefaults.standard.set("fristTimeOpenApp", forKey: "fristTimeOpenApp")
             self.window!.rootViewController = GuideViewController()
         }else {
-            let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
-            window?.rootViewController = mainStoryboard.instantiateInitialViewController()
+            
+            let savePWD = UserDefaults.standard
+            
+            if ((savePWD.object(forKey: "theCodedLockPWD")) != nil){
+                print("密码是:\n" + savePWD.string(forKey: "theCodedLockPWD")!)
+                let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
+                window?.rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "AppLockView")
+            }else {
+                print("没有设置密码锁！")
+                let mainStoryboard = UIStoryboard(name:"Main", bundle:nil)
+                window?.rootViewController = mainStoryboard.instantiateInitialViewController()
+            }
+            
             UserDefaults.standard.set("fristTimeOpenApp", forKey: "fristTimeOpenApp")
         }
     }

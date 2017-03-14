@@ -26,38 +26,37 @@ class RetrievePasswordViewController: UIViewController, UITextFieldDelegate{
         label.font = UIFont.systemFont(ofSize: 17)
         label.textColor = #colorLiteral(red: 0.2283354998, green: 0.7348412871, blue: 0.498880744, alpha: 1)
         label.textAlignment = .center
-        label.text = "请输入你已注册留忆账号的邮箱:"
+        label.text = "请输入你绑定留忆账号的邮箱:"
         self.view.addSubview(label)
         
+        let emailIcon = UIImageView.init(frame: CGRect(x: 16, y: 134, width: 38, height: 32))
+        emailIcon.image = UIImage(named: "emailIcon")
+        self.view.addSubview(emailIcon)
+        
         //账号邮箱输入框
-        emailTextField = UITextField.init(frame: CGRect(x: self.view.frame.width/2 - 120, y: 130, width: 240, height: 36))
+        emailTextField = UITextField.init(frame: CGRect(x: 60, y: 135, width: view.frame.width - 85, height: 30))
         emailTextField?.delegate = self
-        emailTextField?.font = UIFont.systemFont(ofSize: 14)
-        emailTextField?.textColor = #colorLiteral(red: 0.2283354998, green: 0.7348412871, blue: 0.498880744, alpha: 1)
+        emailTextField?.font = UIFont.systemFont(ofSize: 15)
         emailTextField?.tintColor = #colorLiteral(red: 0.2283354998, green: 0.7348412871, blue: 0.498880744, alpha: 1)
         emailTextField?.placeholder = "输入邮箱"
-        emailTextField?.layer.borderColor = #colorLiteral(red: 0.2283354998, green: 0.7348412871, blue: 0.498880744, alpha: 1).cgColor
-        emailTextField?.layer.borderWidth = 1
-        emailTextField?.layer.masksToBounds = true
-        emailTextField?.layer.cornerRadius = 18
-        let emailTextFieldLeftView = UIImageView.init(frame: CGRect(x: 0, y: 0, width: 30, height: 25))
-        emailTextFieldLeftView.image = UIImage(named: "emailIcon")
-        emailTextField?.leftView = emailTextFieldLeftView
-        emailTextField?.leftViewMode = .always
+        emailTextField?.borderStyle = .none
         emailTextField?.clearButtonMode = .whileEditing
         emailTextField?.keyboardType = .emailAddress
         emailTextField?.returnKeyType = .done
         self.view.addSubview(emailTextField!)
         
+        let underLine1 = LineView.init(frame: CGRect(x: 59, y: 168, width: view.frame.width - 85, height: 0.5))
+        self.view.addSubview(underLine1)
+        
         //确认按钮
-        let confirmButton = UIButton.init(frame: CGRect(x: self.view.frame.width/2 - 60, y: 190, width: 120, height: 36))
+        let confirmButton = UIButton.init(frame: CGRect(x: 25, y: 195, width: view.frame.width - 50, height: 40))
         confirmButton.setTitle("确认", for: .normal)
         confirmButton.setTitle("确认", for: .highlighted)
         confirmButton.setTitleColor(UIColor.white, for: .normal)
         confirmButton.setTitleColor(#colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1), for: .highlighted)
         confirmButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         confirmButton.backgroundColor = #colorLiteral(red: 0.2283354998, green: 0.7348412871, blue: 0.498880744, alpha: 1)
-        confirmButton.layer.cornerRadius = 18
+        confirmButton.layer.cornerRadius = 4
         confirmButton.layer.masksToBounds = true
 //        confirmButton?.addTarget(self, action: #selector(confirm), for: .touchUpInside)
         self.view.addSubview(confirmButton)

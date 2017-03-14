@@ -63,7 +63,7 @@ class AboutAppViewController: UIViewController {
     //用户条款点击
     func clickTermsLabel(){
         print("点击了用户条款！")
-        let viewController = UserTermsViewController()
+        let viewController = TermsOfUserViewController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

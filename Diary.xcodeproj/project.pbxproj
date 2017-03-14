@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		4615C2211E012D1B00CFCAD5 /* RetrievePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4615C2201E012D1B00CFCAD5 /* RetrievePasswordViewController.swift */; };
 		46500A961E096BC40091CB50 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46500A951E096BC40091CB50 /* ProfileViewController.swift */; };
-		466B17D11E0429D9002752A9 /* UserTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B17D01E0429D9002752A9 /* UserTermsViewController.swift */; };
+		4651C9ED1E782DAE00C7034C /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4651C9EC1E782DAE00C7034C /* LineView.swift */; };
+		466B17D11E0429D9002752A9 /* TermsOfUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466B17D01E0429D9002752A9 /* TermsOfUserViewController.swift */; };
 		469B01E31DEEABEB005EB6D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E21DEEABEB005EB6D8 /* HomeViewController.swift */; };
 		469B01E71DEEAC08005EB6D8 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E61DEEAC08005EB6D8 /* DiaryViewController.swift */; };
 		469B01E91DEEAC14005EB6D8 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469B01E81DEEAC14005EB6D8 /* MeViewController.swift */; };
@@ -23,9 +24,13 @@
 		46B235191D9A765D00C3DC2B /* DiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B235181D9A765D00C3DC2B /* DiaryUITests.swift */; };
 		46BFB35F1E07F2E600DC87CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BFB35E1E07F2E600DC87CC /* Launch Screen.storyboard */; };
 		46E4E8EC1DF93ACC00217D23 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E4E8EB1DF93ACC00217D23 /* AboutAppViewController.swift */; };
+		46E5CE691E61B146006B0820 /* CodedLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5CE681E61B146006B0820 /* CodedLockViewController.swift */; };
+		46E5CE6C1E61B1D4006B0820 /* Drop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5CE6B1E61B1D4006B0820 /* Drop.swift */; };
+		46E5CE6E1E61B369006B0820 /* CodedLockSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5CE6D1E61B369006B0820 /* CodedLockSetViewController.swift */; };
+		46E5CE701E61B541006B0820 /* AppLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5CE6F1E61B541006B0820 /* AppLockViewController.swift */; };
 		46F634631DF1E449002D8834 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F634621DF1E449002D8834 /* MessagesViewController.swift */; };
 		46F79C451DFEDE430051C541 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F79C441DFEDE430051C541 /* SignInViewController.swift */; };
-		46F79C471DFEDEC10051C541 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F79C461DFEDEC10051C541 /* RegisterViewController.swift */; };
+		46F79C471DFEDEC10051C541 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F79C461DFEDEC10051C541 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -59,7 +64,8 @@
 /* Begin PBXFileReference section */
 		4615C2201E012D1B00CFCAD5 /* RetrievePasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RetrievePasswordViewController.swift; sourceTree = "<group>"; };
 		46500A951E096BC40091CB50 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		466B17D01E0429D9002752A9 /* UserTermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTermsViewController.swift; sourceTree = "<group>"; };
+		4651C9EC1E782DAE00C7034C /* LineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		466B17D01E0429D9002752A9 /* TermsOfUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfUserViewController.swift; sourceTree = "<group>"; };
 		469B01E21DEEABEB005EB6D8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		469B01E61DEEAC08005EB6D8 /* DiaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		469B01E81DEEAC14005EB6D8 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +85,13 @@
 		46B2351A1D9A765D00C3DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46BFB35E1E07F2E600DC87CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Diary/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		46E4E8EB1DF93ACC00217D23 /* AboutAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		46E5CE681E61B146006B0820 /* CodedLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodedLockViewController.swift; sourceTree = "<group>"; };
+		46E5CE6B1E61B1D4006B0820 /* Drop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drop.swift; sourceTree = "<group>"; };
+		46E5CE6D1E61B369006B0820 /* CodedLockSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodedLockSetViewController.swift; sourceTree = "<group>"; };
+		46E5CE6F1E61B541006B0820 /* AppLockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLockViewController.swift; sourceTree = "<group>"; };
 		46F634621DF1E449002D8834 /* MessagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		46F79C441DFEDE430051C541 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		46F79C461DFEDEC10051C541 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		46F79C461DFEDEC10051C541 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +157,7 @@
 		469B01EA1DEEAC81005EB6D8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				46E5CE6A1E61B1D4006B0820 /* SwiftyDrop */,
 				469B01EB1DEEACA9005EB6D8 /* Guide */,
 			);
 			path = Other;
@@ -163,6 +174,9 @@
 		46AE0F171DF19097003BE887 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				46E5CE6F1E61B541006B0820 /* AppLockViewController.swift */,
+				46E5CE6D1E61B369006B0820 /* CodedLockSetViewController.swift */,
+				46E5CE681E61B146006B0820 /* CodedLockViewController.swift */,
 				46AE0F181DF19097003BE887 /* SettingViewController.swift */,
 				46E4E8EB1DF93ACC00217D23 /* AboutAppViewController.swift */,
 			);
@@ -198,11 +212,11 @@
 			isa = PBXGroup;
 			children = (
 				469B01D81DEEA842005EB6D8 /* Home */,
-				469B01D91DEEA867005EB6D8 /* Me */,
-				469B01DA1DEEA8BA005EB6D8 /* Messages */,
 				469B01DB1DEEA8E0005EB6D8 /* MyDiary */,
-				469B01EA1DEEAC81005EB6D8 /* Other */,
+				469B01DA1DEEA8BA005EB6D8 /* Messages */,
+				469B01D91DEEA867005EB6D8 /* Me */,
 				46F79C431DFEC9400051C541 /* SignIn */,
+				469B01EA1DEEAC81005EB6D8 /* Other */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -225,13 +239,22 @@
 			path = DiaryUITests;
 			sourceTree = "<group>";
 		};
+		46E5CE6A1E61B1D4006B0820 /* SwiftyDrop */ = {
+			isa = PBXGroup;
+			children = (
+				46E5CE6B1E61B1D4006B0820 /* Drop.swift */,
+			);
+			path = SwiftyDrop;
+			sourceTree = "<group>";
+		};
 		46F79C431DFEC9400051C541 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				46F79C441DFEDE430051C541 /* SignInViewController.swift */,
-				46F79C461DFEDEC10051C541 /* RegisterViewController.swift */,
+				46F79C461DFEDEC10051C541 /* SignUpViewController.swift */,
 				4615C2201E012D1B00CFCAD5 /* RetrievePasswordViewController.swift */,
-				466B17D01E0429D9002752A9 /* UserTermsViewController.swift */,
+				466B17D01E0429D9002752A9 /* TermsOfUserViewController.swift */,
+				4651C9EC1E782DAE00C7034C /* LineView.swift */,
 			);
 			path = SignIn;
 			sourceTree = "<group>";
@@ -374,18 +397,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				469B01E91DEEAC14005EB6D8 /* MeViewController.swift in Sources */,
-				46F79C471DFEDEC10051C541 /* RegisterViewController.swift in Sources */,
+				46F79C471DFEDEC10051C541 /* SignUpViewController.swift in Sources */,
+				46E5CE691E61B146006B0820 /* CodedLockViewController.swift in Sources */,
+				46E5CE701E61B541006B0820 /* AppLockViewController.swift in Sources */,
 				46B234F71D9A765D00C3DC2B /* AppDelegate.swift in Sources */,
-				466B17D11E0429D9002752A9 /* UserTermsViewController.swift in Sources */,
+				466B17D11E0429D9002752A9 /* TermsOfUserViewController.swift in Sources */,
 				46500A961E096BC40091CB50 /* ProfileViewController.swift in Sources */,
+				46E5CE6E1E61B369006B0820 /* CodedLockSetViewController.swift in Sources */,
 				4615C2211E012D1B00CFCAD5 /* RetrievePasswordViewController.swift in Sources */,
 				46E4E8EC1DF93ACC00217D23 /* AboutAppViewController.swift in Sources */,
 				46AE0F1B1DF19265003BE887 /* MessagesTableViewController.swift in Sources */,
 				469B01ED1DEEACCF005EB6D8 /* GuideViewController.swift in Sources */,
+				46E5CE6C1E61B1D4006B0820 /* Drop.swift in Sources */,
 				469B01E71DEEAC08005EB6D8 /* DiaryViewController.swift in Sources */,
 				46AE0F191DF19097003BE887 /* SettingViewController.swift in Sources */,
 				46F634631DF1E449002D8834 /* MessagesViewController.swift in Sources */,
 				46F79C451DFEDE430051C541 /* SignInViewController.swift in Sources */,
+				4651C9ED1E782DAE00C7034C /* LineView.swift in Sources */,
 				469B01E31DEEABEB005EB6D8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
