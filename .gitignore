@@ -56,3 +56,7 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+## Pods 
+Pods/
+Podfile.lock

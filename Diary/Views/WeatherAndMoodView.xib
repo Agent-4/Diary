@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WeatherAndMoodView" customModule="Diary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="368"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDa-l7-O8z">
+                    <rect key="frame" x="28" y="46" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                    <state key="normal" image="sun.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="C0C-0t-9FD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xOA-eQ-6gL">
+                    <rect key="frame" x="96" y="46" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="cloud.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="2wz-vg-ezF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rck-u4-IO3">
+                    <rect key="frame" x="28" y="100" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="rain.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="5XM-SK-Ndw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4P-GB-sH1">
+                    <rect key="frame" x="96" y="100" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="lightning.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Vx-qD-Ehu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DuO-tw-SuR">
+                    <rect key="frame" x="164" y="100" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="snow.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="rxj-QB-Vu0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWr-KA-eEk">
+                    <rect key="frame" x="232" y="100" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="fog.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="GaO-5e-6L1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCa-Bd-XOi">
+                    <rect key="frame" x="164" y="46" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                    <state key="normal" image="wind.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="8xS-eu-W7m"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2p-1i-Hhe">
+                    <rect key="frame" x="232" y="46" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="drizzle.png"/>
+                    <connections>
+                        <action selector="weatherSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="d9A-E8-gdN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhp-DK-PgO">
+                    <rect key="frame" x="28" y="198" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="happy.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="n0o-3m-evR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGN-bg-pMg">
+                    <rect key="frame" x="28" y="250" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="unhappy.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="ias-7o-7ce"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWa-dl-Ulq">
+                    <rect key="frame" x="96" y="250" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="wondering.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="bCq-az-BKV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5h-wW-ieT">
+                    <rect key="frame" x="164" y="250" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="-1" minY="-1" maxX="-1" maxY="-1"/>
+                    <state key="normal" image="sad.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="o5K-dA-N7G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2U-26-TXd">
+                    <rect key="frame" x="232" y="250" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                    <state key="normal" image="angry.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="eQf-M5-uMh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EO1-tX-zjf">
+                    <rect key="frame" x="96" y="198" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="neutral.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="7lT-k5-DJU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3he-Uf-AUI">
+                    <rect key="frame" x="164" y="198" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="veryHappy.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="Qim-kr-9fi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggd-Vc-TVx">
+                    <rect key="frame" x="232" y="198" width="40" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                    <state key="normal" image="cool.png"/>
+                    <connections>
+                        <action selector="moodSelected:" destination="iN0-l3-epB" eventType="touchUpInside" id="BFH-fI-zvr"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今天天气怎样？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48W-cn-Z31">
+                    <rect key="frame" x="97" y="17" width="108" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="今天心情如何？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCI-Sv-KUF">
+                    <rect key="frame" x="97" y="169" width="108" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbp-z7-dOO">
+                    <rect key="frame" x="0.0" y="328" width="300" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.73333333329999995" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="完成">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="SSS:" destination="iN0-l3-epB" eventType="touchUpInside" id="UbR-nr-U2h"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="angryButton" destination="r2U-26-TXd" id="2zV-hp-fG4"/>
+                <outlet property="cloudButton" destination="xOA-eQ-6gL" id="6C6-Zg-Sc1"/>
+                <outlet property="coolButton" destination="Ggd-Vc-TVx" id="xhu-hM-xD8"/>
+                <outlet property="drizzleButton" destination="n2p-1i-Hhe" id="idb-nP-EEi"/>
+                <outlet property="fogButton" destination="KWr-KA-eEk" id="hs1-u0-zje"/>
+                <outlet property="happyButton" destination="mhp-DK-PgO" id="NPn-bg-erp"/>
+                <outlet property="ligtningButton" destination="Z4P-GB-sH1" id="yuk-bZ-aIj"/>
+                <outlet property="moodLabel" destination="VCI-Sv-KUF" id="v2F-aO-zbe"/>
+                <outlet property="neutralButton" destination="EO1-tX-zjf" id="KhX-7I-REO"/>
+                <outlet property="rainButton" destination="rck-u4-IO3" id="QME-Ns-93f"/>
+                <outlet property="sadButton" destination="M5h-wW-ieT" id="Rws-rQ-dGu"/>
+                <outlet property="sonwButton" destination="DuO-tw-SuR" id="Oti-I3-qbI"/>
+                <outlet property="sunButton" destination="zDa-l7-O8z" id="hf2-X4-R04"/>
+                <outlet property="unhappyButton" destination="lGN-bg-pMg" id="zuN-pk-MxT"/>
+                <outlet property="veryHappyButton" destination="3he-Uf-AUI" id="IVd-lP-I1Y"/>
+                <outlet property="weatherLabel" destination="48W-cn-Z31" id="WfR-zh-6ag"/>
+                <outlet property="windButton" destination="VCa-Bd-XOi" id="7cf-8x-U4O"/>
+                <outlet property="wonderingButton" destination="iWa-dl-Ulq" id="jgs-9f-hkM"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="26"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="angry.png" width="96" height="96"/>
+        <image name="cloud.png" width="96" height="96"/>
+        <image name="cool.png" width="96" height="96"/>
+        <image name="drizzle.png" width="96" height="96"/>
+        <image name="fog.png" width="96" height="96"/>
+        <image name="happy.png" width="96" height="96"/>
+        <image name="lightning.png" width="96" height="96"/>
+        <image name="neutral.png" width="96" height="96"/>
+        <image name="rain.png" width="96" height="96"/>
+        <image name="sad.png" width="96" height="96"/>
+        <image name="snow.png" width="96" height="96"/>
+        <image name="sun.png" width="96" height="96"/>
+        <image name="unhappy.png" width="96" height="96"/>
+        <image name="veryHappy.png" width="96" height="96"/>
+        <image name="wind.png" width="96" height="96"/>
+        <image name="wondering.png" width="96" height="96"/>
+    </resources>
+</document>

@@ -2,7 +2,7 @@
 //  GuideViewController.swift
 //  Diary
 //
-//  Created by 莫晓豪 on 2016/10/12.
+//  Created by moxiaohao on 2016/10/12.
 //  Copyright © 2016年 moxiaohao. All rights reserved.
 //
 
