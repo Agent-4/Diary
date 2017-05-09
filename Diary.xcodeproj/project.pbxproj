@@ -1398,17 +1398,9 @@
 					"-framework",
 					"\"AVOSCloud\"",
 					"-framework",
-					"\"AVOSCloudCrashReporting\"",
-					"-framework",
-					"\"AVOSCloudIM\"",
-					"-framework",
 					"\"FSCalendar\"",
 					"-framework",
 					"\"Kingfisher\"",
-					"-framework",
-					"\"Realm\"",
-					"-framework",
-					"\"RealmSwift\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.Diary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1438,17 +1430,9 @@
 					"-framework",
 					"\"AVOSCloud\"",
 					"-framework",
-					"\"AVOSCloudCrashReporting\"",
-					"-framework",
-					"\"AVOSCloudIM\"",
-					"-framework",
 					"\"FSCalendar\"",
 					"-framework",
 					"\"Kingfisher\"",
-					"-framework",
-					"\"Realm\"",
-					"-framework",
-					"\"RealmSwift\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = moxiaohao.Diary;
 				PRODUCT_NAME = "$(TARGET_NAME)";

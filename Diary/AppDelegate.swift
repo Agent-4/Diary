@@ -75,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, QQApiInterfaceDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        AVOSCloud.setApplicationId("Your ID", clientKey: "Your Key")
+        AVOSCloud.setApplicationId("Your Id", clientKey: "Your Key")
         //添加标识，用于判断是否是第一次启动应用....
         buildKeyWindow()
         
