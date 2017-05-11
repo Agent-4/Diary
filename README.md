@@ -21,8 +21,6 @@
 
 **App密码锁**
 
-<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock1.png" width="200px" />
-<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock2.png" width="200px" />
-<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock3.png" width="200px" />
+<img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock1.png" width="200px" /> <img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock2.png" width="200px" /> <img src="http://7xsjfr.com1.z0.glb.clouddn.com/CodedLock3.png" width="200px" />
 
 
