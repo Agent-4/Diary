@@ -17,7 +17,7 @@
 
 **App 引导页**（随便找的4张图片，暂未设计）
 
-<img src="http://four4.coding.me/css/images/GuideView.gif" width="200px" />
+<img src="https://github.com/Agent-4/Diary/blob/master/GuideView.gif" width="200px" />
 
 **App密码锁**
 
